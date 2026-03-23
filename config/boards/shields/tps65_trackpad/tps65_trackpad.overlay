@@ -25,6 +25,11 @@
         compatible = "zmk,input-listener";
         device = <&tps65>;
     };
+
+    ext_power: ext_power {
+        compatible = "zmk,ext-power-generic";
+        control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+    };
 };
 
 &pro_micro_i2c {
