@@ -25,8 +25,22 @@
 };
 
 / {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+    
     tps65_listener {
         compatible = "zmk,input-listener";
         device = <&tps65>;
     };
 };
+
+/ {
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
+
