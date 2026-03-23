@@ -2,13 +2,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <%none>;
+            bindings = <&none>;
         };
     };
 };
